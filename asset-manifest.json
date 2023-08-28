@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/syackzan/syackzanWebsite/static/css/main.5088f027.css",
-    "main.js": "/syackzan/syackzanWebsite/static/js/main.55673e8b.js",
-    "static/js/787.f22c3eca.chunk.js": "/syackzan/syackzanWebsite/static/js/787.f22c3eca.chunk.js",
-    "static/media/onTrack.png": "/syackzan/syackzanWebsite/static/media/onTrack.1642e77816d598fcc090.png",
-    "index.html": "/syackzan/syackzanWebsite/index.html",
-    "main.5088f027.css.map": "/syackzan/syackzanWebsite/static/css/main.5088f027.css.map",
-    "main.55673e8b.js.map": "/syackzan/syackzanWebsite/static/js/main.55673e8b.js.map",
-    "787.f22c3eca.chunk.js.map": "/syackzan/syackzanWebsite/static/js/787.f22c3eca.chunk.js.map"
+    "main.css": "/syackzanWebsite/static/css/main.5088f027.css",
+    "main.js": "/syackzanWebsite/static/js/main.5379c87e.js",
+    "static/js/787.f22c3eca.chunk.js": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js",
+    "static/media/onTrack.png": "/syackzanWebsite/static/media/onTrack.1642e77816d598fcc090.png",
+    "index.html": "/syackzanWebsite/index.html",
+    "main.5088f027.css.map": "/syackzanWebsite/static/css/main.5088f027.css.map",
+    "main.5379c87e.js.map": "/syackzanWebsite/static/js/main.5379c87e.js.map",
+    "787.f22c3eca.chunk.js.map": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5088f027.css",
-    "static/js/main.55673e8b.js"
+    "static/js/main.5379c87e.js"
   ]
 }
