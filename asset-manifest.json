@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/syackzan/syackzanWebsite/static/css/main.5088f027.css",
+    "main.js": "/syackzan/syackzanWebsite/static/js/main.55673e8b.js",
+    "static/js/787.f22c3eca.chunk.js": "/syackzan/syackzanWebsite/static/js/787.f22c3eca.chunk.js",
+    "static/media/onTrack.png": "/syackzan/syackzanWebsite/static/media/onTrack.1642e77816d598fcc090.png",
+    "index.html": "/syackzan/syackzanWebsite/index.html",
+    "main.5088f027.css.map": "/syackzan/syackzanWebsite/static/css/main.5088f027.css.map",
+    "main.55673e8b.js.map": "/syackzan/syackzanWebsite/static/js/main.55673e8b.js.map",
+    "787.f22c3eca.chunk.js.map": "/syackzan/syackzanWebsite/static/js/787.f22c3eca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5088f027.css",
+    "static/js/main.55673e8b.js"
+  ]
+}
