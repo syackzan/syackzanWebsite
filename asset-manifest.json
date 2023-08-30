@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/syackzanWebsite/static/css/main.34c07b06.css",
-    "main.js": "/syackzanWebsite/static/js/main.e32220f3.js",
+    "main.css": "/syackzanWebsite/static/css/main.43b32bda.css",
+    "main.js": "/syackzanWebsite/static/js/main.06c6930e.js",
     "static/js/787.f22c3eca.chunk.js": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js",
     "static/media/obstacleassault.png": "/syackzanWebsite/static/media/obstacleassault.236c1592b56a08dd2eab.png",
     "static/media/simpleshooter.png": "/syackzanWebsite/static/media/simpleshooter.8d325f452692195542ac.png",
@@ -19,12 +19,12 @@
     "static/media/codeGenerator.png": "/syackzanWebsite/static/media/codeGenerator.d6b586d1189769621193.png",
     "static/media/onTrack.png": "/syackzanWebsite/static/media/onTrack.1642e77816d598fcc090.png",
     "index.html": "/syackzanWebsite/index.html",
-    "main.34c07b06.css.map": "/syackzanWebsite/static/css/main.34c07b06.css.map",
-    "main.e32220f3.js.map": "/syackzanWebsite/static/js/main.e32220f3.js.map",
+    "main.43b32bda.css.map": "/syackzanWebsite/static/css/main.43b32bda.css.map",
+    "main.06c6930e.js.map": "/syackzanWebsite/static/js/main.06c6930e.js.map",
     "787.f22c3eca.chunk.js.map": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.34c07b06.css",
-    "static/js/main.e32220f3.js"
+    "static/css/main.43b32bda.css",
+    "static/js/main.06c6930e.js"
   ]
 }
