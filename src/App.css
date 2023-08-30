@@ -6,6 +6,11 @@ body,
 html {
   margin: 0;
   padding: 0;
+  background-color: #f5f5f5;
+}
+
+.BG {
+  background-color: #f5f5f5;
 }
 
 /* Universal */
@@ -287,6 +292,43 @@ html {
   color: white;
 }
 
+/* ABOUT ME CSS SECTION */
+.paper-container{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 25px 200px;
+}
+
+.aboutHeaders {
+  width: fit-content;
+  background-color: #f5f5f5;
+  text-shadow: 3px 2px 7px black; /* Add text shadow */
+  font-size: 22px;
+}
+
+
+.back-paper-three{
+  background-color: white;
+  width: 100%
+}
+
+.back-paper-two{
+  background-color: white;
+  width: 100%
+}
+
+.back-paper-one{
+  background-color: white;
+  width: 100%
+}
+
+.front-paper{
+  background-color: white;
+  width: 100%;
+}
+
 /* FOOTER CSS */
 /* Footer Styling/Fixing footer to bottom of page */
 .footer {
@@ -323,6 +365,11 @@ html {
   .square{
     flex-basis: calc(100% - 20px);
   }
+  
+  .paper-container{
+    padding: 20px 100px;
+    transition: 0.3;
+  }
 }
 
 @media(max-width: 670px)
@@ -336,9 +383,26 @@ html {
     align-items: center;
     padding-right: 50px;
   }
-  .miniNavSytle
+  .miniNavStyle
   {
     color: black;
     font-size: 16px;
+    text-decoration: none;
   }
+}
+
+@media(max-width: 501px)
+{
+  .paper-container{
+    padding: 20px 25px;
+    transition: 0.3;
+  }
+}
+
+.miniNavStyle:hover{
+  font-weight: bold;
+}
+
+.closeSideNavStyle:hover{
+  font-weight: bold;
 }

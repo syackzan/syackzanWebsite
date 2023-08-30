@@ -43,7 +43,7 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
         {
             return(
                 <div className="d-flex">
-                    <p className="headerTextStyle">ABOUT ME</p>
+                    <p className="headerTextStyle">ABOUT:</p>
                     <p className="buffer1"></p>
                 </div>
             )
@@ -53,7 +53,6 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
 
     if(sideNav)
     {
-        console.log("Hello");
         return(
             <div className="side-nav-overlay">
                 <div className="side-nav-content">
@@ -74,7 +73,7 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
                 </div>
                 <div className="full miniNav">
                     <div className="miniNavLinkAfull">
-                        <a className="textDectorationNone miniNavSytle" href="#nav" onClick={() => openSideNav(!sideNav)}>☰</a>
+                        <a className="textDectorationNone miniNavStyle" href="#nav" onClick={() => openSideNav(!sideNav)}>☰</a>
                     </div>
                 </div>
                 <div className="full bigNav">
@@ -83,7 +82,7 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
                             <p className={currentPage === 'Portfolio' ? 'navStyle' : 'navStyle'}>PORTFOLIO</p>
                         </a>
                         <a className="divLinksB full" href="#about" onClick={() => handlePageChange('About')}>
-                            <p className={currentPage === 'About' ? 'navStyle' : 'navStyle'}>ABOUT ME</p>
+                            <p className={currentPage === 'About' ? 'navStyle' : 'navStyle'}>ABOUT</p>
                         </a>
                         <a className="divLinksB full" href="#contact" onClick={() => handlePageChange('Contact')}>
                             <p className={currentPage === 'Contact' ? 'navStyle' : 'navStyle'}>CONTACT</p>

@@ -46,7 +46,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Full stack</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://cryptic-sands-14911.herokuapp.com/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">TECH BLOG</h1>
                             <div class="image-container">
@@ -55,7 +55,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Full stack</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://syackzan.github.io/The-Degenerate/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">THE DEGENERATE</h1>
                             <div class="image-container">
@@ -64,7 +64,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Front End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://syackzan.github.io/Weather-Dashboard/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">WEATHER DASHBOARD</h1>
                             <div class="image-container">
@@ -73,7 +73,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Front End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://syackzan.github.io/Day-Calendar/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">DAY PLANNER</h1>
                             <div class="image-container">
@@ -82,7 +82,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Front End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://syackzan.github.io/Code-Generator-v1/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">CODE GENERATOR</h1>
                             <div class="image-container">
@@ -91,7 +91,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Front End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://guarded-retreat-79950.herokuapp.com/" className="square">
                         <div class="content">
                             <h1 class="thumb-title">NOTE TAKER</h1>
                             <div class="image-container">
@@ -100,7 +100,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Front End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://www.youtube.com/watch?v=7UEdc37f40I" className="square">
                         <div class="content">
                             <h1 class="thumb-title">E-COMMERCE BACKEND</h1>
                             <div class="image-container">
@@ -109,7 +109,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Back End</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://www.youtube.com/watch?v=KaOJYunXeBo" className="square">
                         <div class="content">
                             <h1 class="thumb-title">TEAM GENERATOR</h1>
                             <div class="image-container">
@@ -118,7 +118,7 @@ const Portfolio = ({ subHeader }) => {
                             <h2 class="thumb-subtitle">Backend</h2>
                         </div>
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
+                    <a href="https://www.youtube.com/watch?v=cC1MKmIArhY" className="square">
                         <div class="content">
                             <h1 class="thumb-title">EMPLOYEE TRACKER</h1>
                             <div class="image-container">
