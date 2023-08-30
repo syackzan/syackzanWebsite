@@ -61,12 +61,17 @@ html {
 
 .bottomHeader {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  align-items: center;
   width: 100%;
   height: 100px;
   background-color: #f5f5f5;
   border-bottom: 1px solid black;
+}
+
+.bottomHeader1{
+  display: flex;
+  align-items: center;
+  padding-left: 200px;
 }
 
 .subNavStyle {
@@ -302,31 +307,26 @@ html {
 }
 
 .aboutHeaders {
-  width: fit-content;
-  background-color: #f5f5f5;
-  text-shadow: 3px 2px 7px black; /* Add text shadow */
-  font-size: 22px;
-}
-
-
-.back-paper-three{
-  background-color: white;
-  width: 100%
-}
-
-.back-paper-two{
-  background-color: white;
-  width: 100%
-}
-
-.back-paper-one{
-  background-color: white;
-  width: 100%
-}
-
-.front-paper{
-  background-color: white;
   width: 100%;
+  background-color: #f5f5f5;
+  font-size: 22px;
+  margin: 0px;
+}
+
+.bulletPointBlock{
+  margin-left: -23px;
+}
+
+.lineBetween
+{
+  border-left: 2px solid black;
+  height: 100%;
+  margin-left: -12px;
+  padding-left: 12px;
+}
+
+.spacer{
+  height: 30px;
 }
 
 /* FOOTER CSS */
@@ -370,6 +370,10 @@ html {
     padding: 20px 100px;
     transition: 0.3;
   }
+
+  .bottomHeader1{
+    padding-left: 100px;
+  }
 }
 
 @media(max-width: 670px)
@@ -396,6 +400,10 @@ html {
   .paper-container{
     padding: 20px 25px;
     transition: 0.3;
+  }
+
+  .bottomHeader1{
+    padding-left: 25px;
   }
 }
 

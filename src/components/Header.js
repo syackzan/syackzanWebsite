@@ -91,11 +91,8 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
                 </div>
             </header>
             <div className="bottomHeader">
-                <div className="col-6 full centerElement">
+                <div className="bottomHeader1">
                     {currentSubHeader(currentPage)}
-                </div>
-                <div className="col-6">
-
                 </div>
             </div>
         </div>
