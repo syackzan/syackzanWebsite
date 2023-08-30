@@ -2,7 +2,27 @@ import React, {useState} from 'react';
 
 const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
 
-    
+    const [sideNav, openSideNav] = useState(false);
+
+    const handleSideNavFunctions = (changes) => {
+
+        if(changes === "Portfolio")
+        {
+            handlePageChange("Portfolio")
+        }
+
+        if(changes === "About")
+        {
+            handlePageChange("About")
+        }
+
+        if(changes === "Contact")
+        {
+            handlePageChange("Contact")
+        }
+
+        openSideNav(!sideNav);
+    }    
 
     const currentSubHeader = (currentPage) => {
 
@@ -18,7 +38,32 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
                 </div>
             )
         }
+
+        if(currentPage == "About")
+        {
+            return(
+                <div className="d-flex">
+                    <p className="headerTextStyle">ABOUT ME</p>
+                    <p className="buffer1"></p>
+                </div>
+            )
+        }
         
+    }
+
+    if(sideNav)
+    {
+        console.log("Hello");
+        return(
+            <div className="side-nav-overlay">
+                <div className="side-nav-content">
+                    <a className="closeSideNavStyle" href="#nav" onClick={() => openSideNav(!sideNav)}>X</a>
+                    <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("Portfolio")}>PORTFOLIO</a>
+                    <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("About")}>ABOUT</a>
+                    <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("Contact")}>CONTACT</a>
+                </div>  
+            </div>
+        )
     }
 
     return(
@@ -27,7 +72,12 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
                 <div className="full centerElement onHover">
                     <p className="headerTextStyle">SCOTT YACKZAN</p>
                 </div>
-                <div className="d-flex full">
+                <div className="full miniNav">
+                    <div className="miniNavLinkAfull">
+                        <a className="textDectorationNone miniNavSytle" href="#nav" onClick={() => openSideNav(!sideNav)}>☰</a>
+                    </div>
+                </div>
+                <div className="full bigNav">
                     <div className="divLinksA full">
                         <a className="divLinksB full" href="#portfolio" onClick={() => handlePageChange('Portfolio')}>
                             <p className={currentPage === 'Portfolio' ? 'navStyle' : 'navStyle'}>PORTFOLIO</p>
