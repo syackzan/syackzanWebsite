@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from "framer-motion";
 
 const AboutMe = () => {
 
@@ -9,7 +10,9 @@ const AboutMe = () => {
                 <h1 className="aboutHeaders">BACKGROUND</h1>
             </div>
             <div className="d-flex">
-                <p className="lineBetween"></p>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}>
+                    <p className="lineBetween"></p>
+                </motion.div>
                 <div>
                     <p>My name is Scotty Yackzan, and I am a passionate Full Stack Web and Game Developer.
                         Despite discovering my enthusiasm for programming later in life, my dedication is
@@ -28,7 +31,9 @@ const AboutMe = () => {
                 <h2 className="aboutHeaders">LANGUAGES</h2>
             </div>
             <div className="d-flex">
-                <p className="lineBetween"></p>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}>
+                    <p className="lineBetween"></p>
+                </motion.div>
                 <div>
                     <p>C++, Javascript, Python, JSON</p>
                     <div className="spacer"></div>
@@ -39,12 +44,14 @@ const AboutMe = () => {
                 <h3 className="aboutHeaders">FRAMEWORKS</h3>
             </div>
             <div className="d-flex">
-                <p className="lineBetween"></p>
+                <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 3 }}>
+                    <p className="lineBetween"></p>
+                </motion.div>
                 <div>
-                <p>
-                    Node.js, NoSql, MongoDB, Express, Heroku, Apollo Server Express, Graphql, JW Tokens, Bootstrap, Framer-Motion, various npm packages++.
-                </p>
-                <div className="spacer"></div>
+                    <p>
+                        Node.js, NoSql, MongoDB, Express, Heroku, Apollo Server Express, Graphql, JW Tokens, Bootstrap, Framer-Motion, various npm packages++.
+                    </p>
+                    <div className="spacer"></div>
                 </div>
             </div>
             <div className="d-flex">
@@ -54,10 +61,10 @@ const AboutMe = () => {
             <div className="d-flex">
                 <p className=""></p>
                 <div>
-                <p>Unreal Engine 4, Unreal Engine 5</p>
-                <div className="spacer"></div>
+                    <p>Unreal Engine 4, Unreal Engine 5</p>
+                    <div className="spacer"></div>
                 </div>
-                
+
             </div>
         </div>
     )

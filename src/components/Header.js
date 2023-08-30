@@ -57,7 +57,7 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
             <div className="side-nav-overlay">
                 <div className="side-nav-content">
                     <a className="closeSideNavStyle" href="#nav" onClick={() => openSideNav(!sideNav)}>X</a>
-                    <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("Portfolio")}>PORTFOLIO</a>
+                    <a className="linksSideNavNoBorder" href="#nav" onClick={() => handleSideNavFunctions("Portfolio")}>PORTFOLIO</a>
                     <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("About")}>ABOUT</a>
                     <a className="linksSideNav" href="#nav" onClick={() => handleSideNavFunctions("Contact")}>CONTACT</a>
                 </div>  
@@ -68,7 +68,7 @@ const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
     return(
         <div>
             <header className="headerStyle">
-                <div className="full centerElement onHover">
+                <div className="full centerElement">
                     <p className="headerTextStyle">SCOTT YACKZAN</p>
                 </div>
                 <div className="full miniNav">

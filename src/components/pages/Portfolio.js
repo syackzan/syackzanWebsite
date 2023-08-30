@@ -14,11 +14,110 @@ import simpleShooter from '../assets/images/simpleshooter.png';
 import cryptRaider from '../assets/images/cryptraider.png';
 import toonTanks from '../assets/images/toontanks.png';
 import obstacleAssault from '../assets/images/obstacleassault.png';
+import { motion } from "framer-motion";
 
 const Portfolio = ({ subHeader }) => {
 
-    const [falling, setFalling] = useState(false);
+    const [hoverGreenCycle, isHoveringGreenCycle] = useState(false);
+    const [hoverOnTrack, isHoverOnTrack] = useState(false);
+    const [hoverTechBlog, isHoverTechBlog] = useState(false);
+    const [hoverDegen, isHoverDegen] = useState(false);
+    const [hoverWDB, isHoverWDB] = useState(false);
+    const [hoverWDS, isHoverWDS] = useState(false);
+    const [hoverPWG, isHoverPWG] = useState(false);
+    const [hoverNT, isHoverNT] = useState(false);
+    const [hoverEC, isHoverEC] = useState(false);
+    const [hoverTG, isHoverTG] = useState(false);
+    const [hoverET, isHoverET] = useState(false);
 
+
+    const handleHoverGreenCycle = () => {
+        isHoveringGreenCycle(true);
+    }
+
+    const handleUnhoverGreenCycle = () => {
+        isHoveringGreenCycle(false);
+    }
+
+    const handleHoverOnTrack = () => {
+        isHoverOnTrack(true);
+    }
+
+    const handleUnhoverOnTrack = () => {
+        isHoverOnTrack(false);
+    }
+
+    const handleHoverTechBlog = () => {
+        isHoverTechBlog(true);
+    }
+
+    const handleUnhoverTechBlog = () => {
+        isHoverTechBlog(false);
+    }
+
+    const handleHoverDegen = () => {
+        isHoverDegen(true);
+    }
+
+    const handleUnhoverDegen = () => {
+        isHoverDegen(false);
+    }
+
+    const handleHoverWDB = () => {
+        isHoverWDB(true);
+    }
+
+    const handleUnhoverWDB = () => {
+        isHoverWDB(false);
+    }
+
+    const handleHoverWDS = () => {
+        isHoverWDS(true);
+    }
+
+    const handleUnhoverWDS = () => {
+        isHoverWDS(false);
+    }
+
+    const handleHoverPWG = () => {
+        isHoverPWG(true);
+    }
+
+    const handleUnhoverPWG = () => {
+        isHoverPWG(false);
+    }
+
+    const handleHoverNT = () => {
+        isHoverNT(true);
+    }
+
+    const handleUnhoverNT = () => {
+        isHoverNT(false);
+    }
+
+    const handleHoverEC = () => {
+        isHoverEC(true);
+    }
+
+    const handleUnhoverEC = () => {
+        isHoverEC(false);
+    }
+
+    const handleHoverTG = () => {
+        isHoverTG(true);
+    }
+
+    const handleUnhoverTG = () => {
+        isHoverTG(false);
+    }
+
+    const handleHoverET = () => {
+        isHoverET(true);
+    }
+
+    const handleUnhoverET = () => {
+        isHoverET(false);
+    }
 
     if (subHeader == "Websites") {
         return (
@@ -28,104 +127,181 @@ const Portfolio = ({ subHeader }) => {
                     {/* <section class="header1">
                     <h2 className="headerColor"><u>Full Stack Programs</u></h2>
                 </section> */}
-                    <a href="https://mighty-headland-87510.herokuapp.com/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">GREEN CYCLE</h1>
-                            <div class="image-container">
-                                <img src={greenCycle} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Full stack</h2>
-                        </div>
+                    <a href="https://mighty-headland-87510.herokuapp.com/" onMouseEnter={handleHoverGreenCycle} onMouseLeave={handleUnhoverGreenCycle} className="square">
+                        {hoverGreenCycle === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">GREEN CYCLE</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 0.95 }}>
+                                    <h2 class="thumb-title">Green Cycle: A website built to track waste on a Construction Job.</h2>
+                                    <div class="image-container">
+                                        <img src={greenCycle} alt="Image" />
+                                    </div>
+                                    <h3 class="thumb-subtitle">Built with MERN Stack</h3>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">ON TRACK</h1>
-                            <div class="image-container">
-                                <img src={onTrack} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Full stack</h2>
-                        </div>
+                    <a href="https://sheltered-lake-23144.herokuapp.com/" onMouseEnter={handleHoverOnTrack} onMouseLeave={handleUnhoverOnTrack} className="square">
+                        {hoverOnTrack === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">ONTRACK</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h2 class="thumb-title">onTrack: A website built to track scope & schedule on a Construction job.</h2>
+                                    <div class="image-container">
+                                        <img src={onTrack} alt="Image" />
+                                    </div>
+                                    <h3 class="thumb-subtitle">Built with Javascript and MySQL</h3>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://cryptic-sands-14911.herokuapp.com/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">TECH BLOG</h1>
-                            <div class="image-container">
-                                <img src={techBlog} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Full stack</h2>
-                        </div>
+                    <a href="https://cryptic-sands-14911.herokuapp.com/" onMouseEnter={handleHoverTechBlog} onMouseLeave={handleUnhoverTechBlog} className="square">
+                        {hoverTechBlog === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">TECH BLOG</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Tech Blog: A website built link up with like minded coders.</h1>
+                                    <div class="image-container">
+                                        <img src={techBlog} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with Javascript and MySQL</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://syackzan.github.io/The-Degenerate/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">THE DEGENERATE</h1>
-                            <div class="image-container">
-                                <img src={theDegenerate} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Front End</h2>
-                        </div>
+                    <a href="https://syackzan.github.io/The-Degenerate/" onMouseEnter={handleHoverDegen} onMouseLeave={handleUnhoverDegen} className="square">
+                        {hoverDegen === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">THE DEGENERATE</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">The Degenerate: A place for gamblers to find quick odds.</h1>
+                                    <div class="image-container">
+                                        <img src={theDegenerate} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://syackzan.github.io/Weather-Dashboard/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">WEATHER DASHBOARD</h1>
-                            <div class="image-container">
-                                <img src={weatherDashboard} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Front End</h2>
-                        </div>
+                    <a href="https://syackzan.github.io/Weather-Dashboard/" onMouseEnter={handleHoverWDB} onMouseLeave={handleUnhoverWDB} className="square">
+                        {hoverWDB === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">WEATHER DASHBOARD</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Weather Dashboard: A website built to know the forecast.</h1>
+                                    <div class="image-container">
+                                        <img src={weatherDashboard} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://syackzan.github.io/Day-Calendar/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">DAY PLANNER</h1>
-                            <div class="image-container">
-                                <img src={dayPlanner} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Front End</h2>
-                        </div>
+                    <a href="https://syackzan.github.io/Day-Calendar/" onMouseEnter={handleHoverWDS} onMouseLeave={handleUnhoverWDS} className="square">
+                        {hoverWDS === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">DAILY SCHEDULER</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Day Planner: A website built to help organize your day.</h1>
+                                    <div class="image-container">
+                                        <img src={dayPlanner} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://syackzan.github.io/Code-Generator-v1/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">CODE GENERATOR</h1>
-                            <div class="image-container">
-                                <img src={codeGenerator} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Front End</h2>
-                        </div>
+                    <a href="https://syackzan.github.io/Code-Generator-v1/" onMouseEnter={handleHoverPWG} onMouseLeave={handleUnhoverPWG} className="square">
+                        {hoverPWG === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">CODE GENERATOR</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Code Generator: A website built to help you generate a password.</h1>
+                                    <div class="image-container">
+                                        <img src={codeGenerator} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://guarded-retreat-79950.herokuapp.com/" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">NOTE TAKER</h1>
-                            <div class="image-container">
-                                <img src={noteTaker} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Front End</h2>
-                        </div>
+                    <a href="https://guarded-retreat-79950.herokuapp.com/" onMouseEnter={handleHoverNT} onMouseLeave={handleUnhoverNT} className="square">
+                        {hoverNT === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">NOTE TAKER</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Note Take: A website to help you take notes and remember ideas.</h1>
+                                    <div class="image-container">
+                                        <img src={noteTaker} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=7UEdc37f40I" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">E-COMMERCE BACKEND</h1>
-                            <div class="image-container">
-                                <img src={ecommerce} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Back End</h2>
-                        </div>
+                    <a href="https://www.youtube.com/watch?v=7UEdc37f40I" onMouseEnter={handleHoverEC} onMouseLeave={handleUnhoverEC} className="square">
+                        {hoverEC === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">E-COMMERCE</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">E-Commerce Backend: Database to store information about products.</h1>
+                                    <div class="image-container">
+                                        <img src={ecommerce} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with node.js</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=KaOJYunXeBo" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">TEAM GENERATOR</h1>
-                            <div class="image-container">
-                                <img src={teamGenerator} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Backend</h2>
-                        </div>
+                    <a href="https://www.youtube.com/watch?v=KaOJYunXeBo" onMouseEnter={handleHoverTG} onMouseLeave={handleUnhoverTG} className="square">
+                        {hoverTG === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">TEAM GENERATOR</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Team Generator Backend: Database to store user information.</h1>
+                                    <div class="image-container">
+                                        <img src={teamGenerator} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Built with node.js</h2>
+                                </motion.div>
+                            )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=cC1MKmIArhY" className="square">
-                        <div class="content">
-                            <h1 class="thumb-title">EMPLOYEE TRACKER</h1>
-                            <div class="image-container">
-                                <img src={employeedTracker} alt="Image" />
-                            </div>
-                            <h2 class="thumb-subtitle">Backend</h2>
-                        </div>
+                    <a href="https://www.youtube.com/watch?v=cC1MKmIArhY" onMouseEnter={handleHoverET} onMouseLeave={handleUnhoverET} className="square">
+                        {hoverET === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">EMPLOYEE TRACKER</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
+                                    <h1 class="thumb-title">Employee Tracker Backend: Database to store employee information.</h1>
+                                    <div class="image-container">
+                                        <img src={employeedTracker} alt="Image" />
+                                    </div>
+                                    <h2 class="thumb-subtitle">Buit with node.js</h2>
+                                </motion.div>
+                            )}
                     </a>
                 </div>
             </div>
