@@ -1,16 +1,30 @@
 {
   "files": {
-    "main.css": "/syackzanWebsite/static/css/main.5088f027.css",
-    "main.js": "/syackzanWebsite/static/js/main.5379c87e.js",
+    "main.css": "/syackzanWebsite/static/css/main.34c07b06.css",
+    "main.js": "/syackzanWebsite/static/js/main.e32220f3.js",
     "static/js/787.f22c3eca.chunk.js": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js",
+    "static/media/obstacleassault.png": "/syackzanWebsite/static/media/obstacleassault.236c1592b56a08dd2eab.png",
+    "static/media/simpleshooter.png": "/syackzanWebsite/static/media/simpleshooter.8d325f452692195542ac.png",
+    "static/media/ecommerce.png": "/syackzanWebsite/static/media/ecommerce.81ab7b8bdb73e2a4f30d.png",
+    "static/media/cryptraider.png": "/syackzanWebsite/static/media/cryptraider.9d83fb5267fa0ee4573b.png",
+    "static/media/teamprofile.png": "/syackzanWebsite/static/media/teamprofile.deae662105b24c397eb5.png",
+    "static/media/employeetracker.png": "/syackzanWebsite/static/media/employeetracker.e7d11102483e37dc0a56.png",
+    "static/media/toontanks.png": "/syackzanWebsite/static/media/toontanks.aaa199778c6a8a3dab01.png",
+    "static/media/greenCycle.png": "/syackzanWebsite/static/media/greenCycle.9f2f3840abc21c103507.png",
+    "static/media/weatherDB.png": "/syackzanWebsite/static/media/weatherDB.0900c7f55a1ac76529d1.png",
+    "static/media/techblog.png": "/syackzanWebsite/static/media/techblog.453ea2ba74c9fbeb69f6.png",
+    "static/media/dayPlanner.png": "/syackzanWebsite/static/media/dayPlanner.113a13b107311909fe30.png",
+    "static/media/gambler.png": "/syackzanWebsite/static/media/gambler.f9fe09fe0ef64fa9113b.png",
+    "static/media/notetaker.png": "/syackzanWebsite/static/media/notetaker.e181d619e7128e5e9f8e.png",
+    "static/media/codeGenerator.png": "/syackzanWebsite/static/media/codeGenerator.d6b586d1189769621193.png",
     "static/media/onTrack.png": "/syackzanWebsite/static/media/onTrack.1642e77816d598fcc090.png",
     "index.html": "/syackzanWebsite/index.html",
-    "main.5088f027.css.map": "/syackzanWebsite/static/css/main.5088f027.css.map",
-    "main.5379c87e.js.map": "/syackzanWebsite/static/js/main.5379c87e.js.map",
+    "main.34c07b06.css.map": "/syackzanWebsite/static/css/main.34c07b06.css.map",
+    "main.e32220f3.js.map": "/syackzanWebsite/static/js/main.e32220f3.js.map",
     "787.f22c3eca.chunk.js.map": "/syackzanWebsite/static/js/787.f22c3eca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5088f027.css",
-    "static/js/main.5379c87e.js"
+    "static/css/main.34c07b06.css",
+    "static/js/main.e32220f3.js"
   ]
 }

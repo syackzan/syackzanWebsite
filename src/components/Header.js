@@ -1,6 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-const Header = ({currentPage, handlePageChange}) => {
+const Header = ({currentPage, handlePageChange, subHeader, setSubHeader}) => {
+
+    
+
+    const currentSubHeader = (currentPage) => {
+
+        if(currentPage == "Portfolio")
+        {
+            return(
+                <div className="d-flex">
+                    <p className="headerTextStyle">PORTFOLIO:</p>
+                    <p className="buffer1"></p>
+                    <a className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Websites')}><p className="subNavStyle">WEBSITES</p></a>
+                    <p className="buffer"> || </p>
+                    <a className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Games')}><p className="subNavStyle">GAMES</p></a>
+                </div>
+            )
+        }
+        
+    }
 
     return(
         <div>
@@ -24,7 +43,7 @@ const Header = ({currentPage, handlePageChange}) => {
             </header>
             <div className="bottomHeader">
                 <div className="col-6 full centerElement">
-                    <p className="headerTextStyle">PORTFOLIO</p>
+                    {currentSubHeader(currentPage)}
                 </div>
                 <div className="col-6">
 

@@ -9,13 +9,14 @@ import Contact from './components/pages/Contact';
 function App() {
 
   const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [subHeader, setSubHeader] = useState('Websites');
 
   const renderPage = () => {
     if (currentPage === 'About'){
       return <AboutMe />;
   }
   if (currentPage === 'Portfolio'){
-      return <Portfolio />;
+      return <Portfolio subHeader={subHeader}/>;
   }
   return <Contact />;
   }
@@ -24,7 +25,7 @@ function App() {
 
   return (
     <div className="">
-        <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+        <Header currentPage={currentPage} handlePageChange={handlePageChange} subHeader={subHeader} setSubHeader={setSubHeader} />
         {renderPage()}
         <Footer />
     </div>
