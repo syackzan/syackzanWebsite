@@ -34,7 +34,7 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
                     <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 1.5}} className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Games')}><p className="subNavStyle">GAMES</p></motion.a>
                     <p className="buffer"> ⚫ </p>
                     <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 2}} 
-                        className="textDectorationNone" href="https://github.com/syackzan" target="_blank" onClick={() => setSubHeader('Games')}>
+                        className="textDectorationNone" href="https://github.com/syackzan" target="_blank" rel="noreferrer" onClick={() => setSubHeader('Games')}>
                         <p className="subNavStyle">GITHUB</p>
                     </motion.a>
                 </div>
