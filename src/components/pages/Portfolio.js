@@ -171,7 +171,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 0.95 }}>
                                     <h2 class="thumb-title">Green Cycle: A website built to track waste on a Construction Job.</h2>
                                     <div class="image-container">
-                                        <img src={greenCycle} alt="GreenCycle" />
+                                        <img src={greenCycle} loading="lazy" alt="GreenCycle" />
                                     </div>
                                     <h3 class="thumb-subtitle">Built with MERN Stack</h3>
                                 </motion.div>
@@ -188,7 +188,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h2 class="thumb-title">onTrack: A website built to track scope & schedule on a Construction job.</h2>
                                     <div class="image-container">
-                                        <img src={onTrack} alt="onTrack" />
+                                        <img src={onTrack} loading="lazy" alt="onTrack" />
                                     </div>
                                     <h3 class="thumb-subtitle">Built with Javascript and MySQL</h3>
                                 </motion.div>
@@ -205,7 +205,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Tech Blog: A website built link up with like minded coders.</h1>
                                     <div class="image-container">
-                                        <img src={techBlog} alt="TechBlog" />
+                                        <img src={techBlog} loading="lazy" alt="TechBlog" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with Javascript and MySQL</h2>
                                 </motion.div>
@@ -222,7 +222,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">The Degenerate: A place for gamblers to find quick odds.</h1>
                                     <div class="image-container">
-                                        <img src={theDegenerate} alt="Degen" />
+                                        <img src={theDegenerate} loading="lazy" alt="Degen" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
                                 </motion.div>
@@ -239,7 +239,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Weather Dashboard: A website built to know the forecast.</h1>
                                     <div class="image-container">
-                                        <img src={weatherDashboard} alt="WeatherDashboard" />
+                                        <img src={weatherDashboard} loading="lazy" alt="WeatherDashboard" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
                                 </motion.div>
@@ -256,7 +256,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Day Planner: A website built to help organize your day.</h1>
                                     <div class="image-container">
-                                        <img src={dayPlanner} alt="Scheduler" />
+                                        <img src={dayPlanner} loading="lazy" alt="Scheduler" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
                                 </motion.div>
@@ -273,7 +273,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Code Generator: A website built to help you generate a password.</h1>
                                     <div class="image-container">
-                                        <img src={codeGenerator} alt="CG" />
+                                        <img src={codeGenerator} loading="lazy" alt="CG" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
                                 </motion.div>
@@ -290,7 +290,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Note Take: A website to help you take notes and remember ideas.</h1>
                                     <div class="image-container">
-                                        <img src={noteTaker} alt="notetaker" />
+                                        <img src={noteTaker} loading="lazy" alt="notetaker" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with HTML, CSS, and JS</h2>
                                 </motion.div>
@@ -307,7 +307,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">E-Commerce Backend: Database to store information about products.</h1>
                                     <div class="image-container">
-                                        <img src={ecommerce} alt="ecommerce" />
+                                        <img src={ecommerce} loading="lazy" alt="ecommerce" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with node.js</h2>
                                 </motion.div>
@@ -324,7 +324,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Team Generator Backend: Database to store user information.</h1>
                                     <div class="image-container">
-                                        <img src={teamGenerator} alt="teamgenerator" />
+                                        <img src={teamGenerator} loading="lazy" alt="teamgenerator" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with node.js</h2>
                                 </motion.div>
@@ -341,7 +341,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Employee Tracker Backend: Database to store employee information.</h1>
                                     <div class="image-container">
-                                        <img src={employeedTracker} alt="employeetracker" />
+                                        <img src={employeedTracker} loading="lazy" alt="employeetracker" />
                                     </div>
                                     <h2 class="thumb-subtitle">Buit with node.js</h2>
                                 </motion.div>
@@ -367,7 +367,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Simple Shooter: Take control of the phantom to survive the enemy onslaught!</h1>
                                     <div class="image-container">
-                                        <img src={simpleShooter} alt="SimpleShooter" />
+                                        <img src={simpleShooter} loading="lazy" alt="SimpleShooter" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built Unreal Engine 5</h2>
                                 </motion.div>
@@ -384,7 +384,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Crypt Raider: Discover the lost treasure of The Crypt!</h1>
                                     <div class="image-container">
-                                        <img src={cryptRaider} alt="CryptRaider" />
+                                        <img src={cryptRaider} loading="lazy" alt="CryptRaider" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with Unreal Engine 5</h2>
                                 </motion.div>
@@ -401,7 +401,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Toon Tanks: Take control of a Tank to destroy the enemy towers!</h1>
                                     <div class="image-container">
-                                        <img src={toonTanks} alt="toontanks" />
+                                        <img src={toonTanks} loading="lazy" alt="toontanks" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built Unreal Engine 5</h2>
                                 </motion.div>
@@ -418,7 +418,7 @@ const Portfolio = ({ subHeader }) => {
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
                                     <h1 class="thumb-title">Obstacle Assault: Move across the puzzle platform to find the finish line!</h1>
                                     <div class="image-container">
-                                        <img src={obstacleAssault} alt="obstacleassault" />
+                                        <img src={obstacleAssault} loading="lazy" alt="obstacleassault" />
                                     </div>
                                     <h2 class="thumb-subtitle">Built with Unreal Engine 5</h2>
                                 </motion.div>
