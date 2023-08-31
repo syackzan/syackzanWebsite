@@ -26,7 +26,7 @@ html {
   align-items: center;
 }
 
-.textDectorationNone{
+.textDectorationNone {
   text-decoration: none;
 }
 
@@ -68,7 +68,7 @@ html {
   border-bottom: 1px solid black;
 }
 
-.bottomHeader1{
+.bottomHeader1 {
   display: flex;
   align-items: center;
   padding-left: 200px;
@@ -77,7 +77,7 @@ html {
 .subNavStyle {
   font-family: Arial, sans-serif;
   /* Use a clean sans-serif font */
-  font-size: 14px;
+  font-size: 16px;
   /* Adjust the font size as needed */
   font-weight: normal;
   /* Regular font weight */
@@ -89,15 +89,17 @@ html {
   /* Reset margin for consistent spacing */
   text-decoration: none;
   text-shadow: 0.1px 0.1px 0.1px black;
-  padding-top: 2px;
+  padding-top: 0px;
+  text-decoration: underline;
 }
 
-.buffer{
-  margin: 0px 3px;
-  font-size: 14px;
+.buffer {
+  margin: 0px 10px;
+  font-size: 12px;
+  padding-top: 1px;
 }
 
-.buffer1{
+.buffer1 {
   margin: 0px 3px;
 }
 
@@ -105,36 +107,41 @@ html {
   display: flex;
 }
 
-.miniNav{
+.miniNav {
   display: none;
 }
 
 .side-nav-overlay {
-  position: fixed; /* Fixed positioning to cover the viewport */
+  position: fixed;
+  /* Fixed positioning to cover the viewport */
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: #f5f5f5; /* Semi-transparent background */
-  z-index: 1000; /* Place above other content (adjust as needed) */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: #f5f5f5;
+  /* Semi-transparent background */
+  z-index: 1000;
+  /* Place above other content (adjust as needed) */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.side-nav-content{
+.side-nav-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100%; /* Adjust the width as desired */
+  width: 100%;
+  /* Adjust the width as desired */
   height: 100%;
   background-color: white;
   padding: 20px 0px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-.closeSideNavStyle
-{
+.closeSideNavStyle {
   align-self: self-end;
   text-decoration: none;
   color: black;
@@ -143,7 +150,7 @@ html {
   padding-bottom: 10px;
 }
 
-.linksSideNav{
+.linksSideNav {
   text-decoration: none;
   font-size: 20px;
   padding-bottom: 10px;
@@ -153,7 +160,7 @@ html {
   padding-left: 20px;
 }
 
-.linksSideNavNoBorder{
+.linksSideNavNoBorder {
   text-decoration: none;
   font-size: 20px;
   padding-bottom: 10px;
@@ -217,7 +224,7 @@ html {
   color: white;
 }
 
-.subNavStyle:hover{
+.subNavStyle:hover {
   font-weight: bold;
 }
 
@@ -266,7 +273,7 @@ html {
   font-weight: normal;
 }
 
-.thumb-subtitle{
+.thumb-subtitle {
   margin-bottom: 0;
   font-size: 20px;
   color: #f5f5f5;
@@ -279,7 +286,7 @@ html {
   font-weight: normal;
 }
 
-.fakeThumbnail{
+.fakeThumbnail {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -302,6 +309,50 @@ html {
   border-radius: 5px;
 }
 
+/* CONTACT CSS SECTION */
+.business-card {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 10px;
+  width: 300px;
+}
+
+.emailText {
+  padding: 0px 10px;
+}
+
+.emailLink {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.emailLink:hover {
+  font-weight: bold;
+}
+
 /* Hover Effects on Portfolio Elements */
 
 .square:hover,
@@ -311,18 +362,18 @@ html {
   color: white;
 }
 
-.linksSideNav:hover{
+.linksSideNav:hover {
   background-color: black;
   color: white;
 }
 
-.linksSideNavNoBorder:hover{
+.linksSideNavNoBorder:hover {
   background-color: black;
-  color:white;
+  color: white;
 }
 
 /* ABOUT ME CSS SECTION */
-.paper-container{
+.paper-container {
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -337,19 +388,18 @@ html {
   margin: 0px;
 }
 
-.bulletPointBlock{
+.bulletPointBlock {
   margin-left: -23px;
 }
 
-.lineBetween
-{
+.lineBetween {
   border-left: 2px solid black;
   height: 100%;
   margin-left: -12px;
   padding-left: 12px;
 }
 
-.spacer{
+.spacer {
   height: 30px;
 }
 
@@ -371,70 +421,75 @@ html {
   margin: 0px 20px;
 }
 
-@media(max-width: 1700px)
-{
-  .square{
+@media(max-width: 1700px) {
+  .square {
     flex-basis: calc(33% - 20px);
   }
 }
 
-@media(max-width: 1276px){
-  .square{
+@media(max-width: 1315px) {
+  .square {
     flex-basis: calc(50% - 20px);
   }
 }
 
-@media(max-width: 759px)
-{
-  .square{
+@media(max-width: 759px) {
+  .square {
     flex-basis: calc(100% - 20px);
   }
-  
-  .paper-container{
+
+  .paper-container {
     padding: 20px 100px;
     transition: 0.3;
   }
 
-  .bottomHeader1{
+  .bottomHeader1 {
     padding-left: 100px;
   }
 }
 
-@media(max-width: 670px)
-{
-  .bigNav{
+@media(max-width: 670px) {
+  .bigNav {
     display: none;
   }
-  .miniNav{
+
+  .miniNav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     padding-right: 50px;
   }
-  .miniNavStyle
-  {
+
+  .miniNavStyle {
     color: black;
     font-size: 16px;
     text-decoration: none;
   }
 }
 
-@media(max-width: 501px)
-{
-  .paper-container{
+@media(max-width: 501px) {
+  .paper-container {
     padding: 20px 25px;
     transition: 0.3;
   }
 
-  .bottomHeader1{
+  .bottomHeader1 {
     padding-left: 25px;
+  }
+
+  .subNavStyle{
+    font-size: 14px;
+  }
+
+  .headerTextStyle{
+    font-size:14px;
   }
 }
 
-.miniNavStyle:hover{
+.miniNavStyle:hover {
   font-weight: bold;
 }
 
-.closeSideNavStyle:hover{
+.closeSideNavStyle:hover {
   font-weight: bold;
 }

@@ -6,13 +6,10 @@ const Footer = () => {
         <div className="footer">
             <ul className="nav nav-tabs">
                 <li className='footer-links'>
-                    <a className='navStyle' href="about" onClick="#">Github</a>
+                    <a className='navStyle' href="https://github.com/syackzan" target="_blank">Github</a>
                 </li>
                 <li className='footer-links'>
-                    <a className='navStyle' href="portfolio" onClick='#'>LinkedIn</a>
-                </li>
-                <li className='footer-links'>
-                    <a className='navStyle' href="resume" onClick='#'>Other</a>
+                    <a className='navStyle' href="https://www.linkedin.com/in/scotty-yackzan-1427b335" target="_blank">LinkedIn</a>
                 </li>
             </ul>
         </div>

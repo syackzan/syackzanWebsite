@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import{motion} from "framer-motion";
 
 const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
 
@@ -28,9 +29,14 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
                 <div className="d-flex">
                     <p className="headerTextStyle">PORTFOLIO:</p>
                     <p className="buffer1"></p>
-                    <a className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Websites')}><p className="subNavStyle">WEBSITES</p></a>
-                    <p className="buffer"> || </p>
-                    <a className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Games')}><p className="subNavStyle">GAMES</p></a>
+                    <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 1}} className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Websites')}><p className="subNavStyle">WEBSITES</p></motion.a>
+                    <p className="buffer"> ⚫ </p>
+                    <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 1.5}} className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Games')}><p className="subNavStyle">GAMES</p></motion.a>
+                    <p className="buffer"> ⚫ </p>
+                    <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 2}} 
+                        className="textDectorationNone" href="https://github.com/syackzan" target="_blank" onClick={() => setSubHeader('Games')}>
+                        <p className="subNavStyle">GITHUB</p>
+                    </motion.a>
                 </div>
             )
         }
@@ -39,6 +45,16 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
             return (
                 <div className="d-flex">
                     <p className="headerTextStyle">ABOUT:</p>
+                    <p className="buffer1"></p>
+                </div>
+            )
+        }
+
+        if(currentPage === "Contact")
+        {
+            return(
+                <div className="d-flex">
+                    <p className="headerTextStyle">CONTACT:</p>
                     <p className="buffer1"></p>
                 </div>
             )
