@@ -343,7 +343,7 @@ const Portfolio = ({ subHeader }) => {
                                     <div class="image-container">
                                         <img src={employeedTracker} loading="lazy" alt="employeetracker" />
                                     </div>
-                                    <h2 class="thumb-subtitle">Buit with node.js</h2>
+                                    <h2 class="thumb-subtitle">Built with node.js</h2>
                                 </motion.div>
                             )}
                     </a>
