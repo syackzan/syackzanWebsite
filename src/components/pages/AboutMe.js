@@ -20,7 +20,7 @@ const AboutMe = () => {
                         I've acquired a comprehensive understanding of Software Development. Whether you're seeking assistance
                         in launching a full-scale website or building and designing a new game, I am here to provide my expertise.
                         While I possess multiple strengths, I acknowledge that the programming landscape is dynamic and rapidly
-                        evolving. Please refer to my highlighted strengths below and my portfolio below to if I am the right fit for your
+                        evolving. Please refer to my highlighted strengths below along with my portfolio to see if I am the right fit for your
                         next project.
                     </p>
                     <div className="spacer"></div>
