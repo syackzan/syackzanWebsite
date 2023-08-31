@@ -26,7 +26,7 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
 
         if (currentPage === "Portfolio") {
             return (
-                <div className="d-flex">
+                <div className="d-flex subHeader-container">
                     <p className="headerTextStyle">PORTFOLIO:</p>
                     <p className="buffer1"></p>
                     <motion.a initial={{opacity: 0}} animate={{ opacity: 1 }} transition={{duration: 1}} className="textDectorationNone" href="#portfolio" onClick={() => setSubHeader('Websites')}><p className="subNavStyle">WEBSITES</p></motion.a>
@@ -43,7 +43,7 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
 
         if (currentPage === "About") {
             return (
-                <div className="d-flex">
+                <div className="d-flex subHeader-container">
                     <p className="headerTextStyle">ABOUT:</p>
                     <p className="buffer1"></p>
                 </div>
@@ -53,7 +53,7 @@ const Header = ({ currentPage, handlePageChange, subHeader, setSubHeader }) => {
         if(currentPage === "Contact")
         {
             return(
-                <div className="d-flex">
+                <div className="d-flex subHeader-container">
                     <p className="headerTextStyle">CONTACT:</p>
                     <p className="buffer1"></p>
                 </div>

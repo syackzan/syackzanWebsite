@@ -160,7 +160,8 @@ const Portfolio = ({ subHeader }) => {
         return (
             <div>
                 <div className='portfolioContainer'>
-                    <a href="https://mighty-headland-87510.herokuapp.com/" onMouseEnter={handleHoverGreenCycle} onMouseLeave={handleUnhoverGreenCycle} className="square">
+                    <a href="https://mighty-headland-87510.herokuapp.com/" onMouseEnter={handleHoverGreenCycle} onMouseLeave={handleUnhoverGreenCycle}
+                      onTouchStart={handleHoverGreenCycle} onTouchEnd={handleUnhoverGreenCycle} className="square">
                         {hoverGreenCycle === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">GREEN CYCLE</h1>
@@ -176,7 +177,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://sheltered-lake-23144.herokuapp.com/" onMouseEnter={handleHoverOnTrack} onMouseLeave={handleUnhoverOnTrack} className="square">
+                    <a href="https://sheltered-lake-23144.herokuapp.com/" onMouseEnter={handleHoverOnTrack} onMouseLeave={handleUnhoverOnTrack} 
+                    onTouchStart={handleHoverOnTrack} onTouchEnd={handleUnhoverOnTrack} className="square">
                         {hoverOnTrack === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">ONTRACK</h1>
@@ -192,7 +194,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://cryptic-sands-14911.herokuapp.com/" onMouseEnter={handleHoverTechBlog} onMouseLeave={handleUnhoverTechBlog} className="square">
+                    <a href="https://cryptic-sands-14911.herokuapp.com/" onMouseEnter={handleHoverTechBlog} onMouseLeave={handleUnhoverTechBlog} 
+                    onTouchStart={handleHoverTechBlog} onTouchEnd={handleUnhoverTechBlog} className="square">
                         {hoverTechBlog === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">TECH BLOG</h1>
@@ -208,7 +211,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.github.io/The-Degenerate/" onMouseEnter={handleHoverDegen} onMouseLeave={handleUnhoverDegen} className="square">
+                    <a href="https://syackzan.github.io/The-Degenerate/" onMouseEnter={handleHoverDegen} onMouseLeave={handleUnhoverDegen} 
+                    onTouchStart={handleHoverDegen} onTouchEnd={handleUnhoverDegen} className="square">
                         {hoverDegen === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">THE DEGENERATE</h1>
@@ -224,7 +228,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.github.io/Weather-Dashboard/" onMouseEnter={handleHoverWDB} onMouseLeave={handleUnhoverWDB} className="square">
+                    <a href="https://syackzan.github.io/Weather-Dashboard/" onMouseEnter={handleHoverWDB} onMouseLeave={handleUnhoverWDB} 
+                    onTouchStart={handleHoverWDB} onTouchEnd={handleUnhoverWDB} className="square">
                         {hoverWDB === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">WEATHER DASHBOARD</h1>
@@ -240,7 +245,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.github.io/Day-Calendar/" onMouseEnter={handleHoverWDS} onMouseLeave={handleUnhoverWDS} className="square">
+                    <a href="https://syackzan.github.io/Day-Calendar/" onMouseEnter={handleHoverWDS} onMouseLeave={handleUnhoverWDS} 
+                    onTouchStart={handleHoverWDS} onTouchEnd={handleUnhoverWDS} className="square">
                         {hoverWDS === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">DAILY SCHEDULER</h1>
@@ -256,7 +262,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.github.io/Code-Generator-v1/" onMouseEnter={handleHoverPWG} onMouseLeave={handleUnhoverPWG} className="square">
+                    <a href="https://syackzan.github.io/Code-Generator-v1/" onMouseEnter={handleHoverPWG} onMouseLeave={handleUnhoverPWG} 
+                    onTouchStart={handleHoverPWG} onTouchEnd={handleUnhoverPWG} className="square">
                         {hoverPWG === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">CODE GENERATOR</h1>
@@ -272,7 +279,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://guarded-retreat-79950.herokuapp.com/" onMouseEnter={handleHoverNT} onMouseLeave={handleUnhoverNT} className="square">
+                    <a href="https://guarded-retreat-79950.herokuapp.com/" onMouseEnter={handleHoverNT} onMouseLeave={handleUnhoverNT} 
+                    onTouchStart={handleHoverNT} onTouchEnd={handleUnhoverNT} className="square">
                         {hoverNT === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">NOTE TAKER</h1>
@@ -288,7 +296,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=7UEdc37f40I" onMouseEnter={handleHoverEC} onMouseLeave={handleUnhoverEC} className="square">
+                    <a href="https://www.youtube.com/watch?v=7UEdc37f40I" onMouseEnter={handleHoverEC} onMouseLeave={handleUnhoverEC} 
+                    onTouchStart={handleHoverEC} onTouchEnd={handleUnhoverEC} className="square">
                         {hoverEC === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">E-COMMERCE</h1>
@@ -304,7 +313,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=KaOJYunXeBo" onMouseEnter={handleHoverTG} onMouseLeave={handleUnhoverTG} className="square">
+                    <a href="https://www.youtube.com/watch?v=KaOJYunXeBo" onMouseEnter={handleHoverTG} onMouseLeave={handleUnhoverTG} 
+                    onTouchStart={handleHoverTG} onTouchEnd={handleUnhoverTG} className="square">
                         {hoverTG === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">TEAM GENERATOR</h1>
@@ -320,7 +330,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://www.youtube.com/watch?v=cC1MKmIArhY" onMouseEnter={handleHoverET} onMouseLeave={handleUnhoverET} className="square">
+                    <a href="https://www.youtube.com/watch?v=cC1MKmIArhY" onMouseEnter={handleHoverET} onMouseLeave={handleUnhoverET} 
+                    onTouchStart={handleHoverET} onTouchEnd={handleUnhoverET} className="square">
                         {hoverET === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">EMPLOYEE TRACKER</h1>
@@ -345,7 +356,8 @@ const Portfolio = ({ subHeader }) => {
         return (
             <div>
                 <div className='portfolioContainer'>
-                    <a href="https://syackzan.itch.io/simple-shooter" onMouseEnter={handleHoverSimpleShooter} onMouseLeave={handleUnhoverSimpleShooter} className="square">
+                    <a href="https://syackzan.itch.io/simple-shooter" onMouseEnter={handleHoverSimpleShooter} onMouseLeave={handleUnhoverSimpleShooter} 
+                    onTouchStart={handleHoverSimpleShooter} onTouchEnd={handleUnhoverSimpleShooter}className="square">
                         {hoverSimpleShooter === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">SIMPLE SHOOTER</h1>
@@ -361,7 +373,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.itch.io/crypt-raider" onMouseEnter={handleHoverCryptRaider} onMouseLeave={handleUnhoverCryptRaider} className="square">
+                    <a href="https://syackzan.itch.io/crypt-raider" onMouseEnter={handleHoverCryptRaider} onMouseLeave={handleUnhoverCryptRaider} 
+                    onTouchStart={handleHoverCryptRaider} onTouchEnd={handleUnhoverCryptRaider}className="square">
                         {hoverCryptRaider === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">CRYPT RAIDER</h1>
@@ -377,7 +390,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.itch.io/toon-tanks-ue5" onMouseEnter={handleHoverToonTanks} onMouseLeave={handleUnhoverToonTanks} className="square">
+                    <a href="https://syackzan.itch.io/toon-tanks-ue5" onMouseEnter={handleHoverToonTanks} onMouseLeave={handleUnhoverToonTanks} 
+                    onTouchStart={handleHoverToonTanks} onTouchEnd={handleUnhoverToonTanks}className="square">
                         {hoverToonTanks === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">TOON TANKS</h1>
@@ -393,7 +407,8 @@ const Portfolio = ({ subHeader }) => {
                                 </motion.div>
                             )}
                     </a>
-                    <a href="https://syackzan.itch.io/obstacle-assault" onMouseEnter={handleHoverObstacleAssault} onMouseLeave={handleUnhoverObstacleAssault} className="square">
+                    <a href="https://syackzan.itch.io/obstacle-assault" onMouseEnter={handleHoverObstacleAssault} onMouseLeave={handleUnhoverObstacleAssault} 
+                    onTouchStart={handleHoverObstacleAssault} onTouchEnd={handleUnhoverObstacleAssault} className="square">
                         {hoverObstacleAssault === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
                                 <h1 class="">OBSTACLE ASSAULT</h1>
