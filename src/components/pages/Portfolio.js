@@ -14,10 +14,12 @@ import simpleShooter from '../assets/images/simpleshooter.png';
 import cryptRaider from '../assets/images/cryptraider.png';
 import toonTanks from '../assets/images/toontanks.png';
 import obstacleAssault from '../assets/images/obstacleassault.png';
+import rushv2 from '../assets/images/rushv2.png';
 import { motion } from "framer-motion";
 
 const Portfolio = ({ subHeader }) => {
 
+    const [hoverRushV2, isHoveringRushV2 ] = useState(false);
     const [hoverGreenCycle, isHoveringGreenCycle] = useState(false);
     const [hoverOnTrack, isHoverOnTrack] = useState(false);
     const [hoverTechBlog, isHoverTechBlog] = useState(false);
@@ -34,6 +36,13 @@ const Portfolio = ({ subHeader }) => {
     const [hoverObstacleAssault, isHoverObstacleAssault] = useState(false);
     const [hoverToonTanks, isHoverToonTanks] = useState(false);
 
+    const handleHoverRushV2 = () => {
+        isHoveringRushV2(true);
+    }
+
+    const handleUnhoverRushV2 = () => {
+        isHoveringRushV2(false);
+    }
 
     const handleHoverGreenCycle = () => {
         isHoveringGreenCycle(true);
@@ -160,6 +169,23 @@ const Portfolio = ({ subHeader }) => {
         return (
             <div>
                 <div className='portfolioContainer'>
+                <a href="https://www.rushv2.com/" onMouseEnter={handleHoverRushV2} onMouseLeave={handleUnhoverRushV2}
+                      onTouchStart={handleHoverRushV2} onTouchEnd={handleUnhoverRushV2} className="square">
+                        {hoverRushV2 === false ? (
+                            <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 1.0 }}>
+                                <h1 class="">RUSHV2</h1>
+                            </motion.div>
+                        ) :
+                            (
+                                <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 2 }} whileHover={{ scale: 0.95 }}>
+                                    <h2 class="thumb-title">RushV2: A website enabling peer to peer wagers.</h2>
+                                    <div class="image-container">
+                                        <img src={rushv2} loading="eager" alt="RushV2" />
+                                    </div>
+                                    <h3 class="thumb-subtitle">Built with MERN Stack</h3>
+                                </motion.div>
+                            )}
+                    </a>
                     <a href="https://mighty-headland-87510.herokuapp.com/" onMouseEnter={handleHoverGreenCycle} onMouseLeave={handleUnhoverGreenCycle}
                       onTouchStart={handleHoverGreenCycle} onTouchEnd={handleUnhoverGreenCycle} className="square">
                         {hoverGreenCycle === false ? (
