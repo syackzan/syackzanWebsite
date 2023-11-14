@@ -382,16 +382,16 @@ const Portfolio = ({ subHeader }) => {
         return (
             <div>
                 <div className='portfolioContainer'>
-                    <a href="https://syackzan.itch.io/simple-shooter" onMouseEnter={handleHoverSimpleShooter} onMouseLeave={handleUnhoverSimpleShooter} 
+                    <a href="https://syackzan.itch.io/chained-reaction" onMouseEnter={handleHoverSimpleShooter} onMouseLeave={handleUnhoverSimpleShooter} 
                     onTouchStart={handleHoverSimpleShooter} onTouchEnd={handleUnhoverSimpleShooter}className="square">
                         {hoverSimpleShooter === false ? (
                             <motion.div class="fakeThumbnail" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 1.0 }}>
-                                <h1 class="">SIMPLE SHOOTER</h1>
+                                <h1 class="">Chained Reaction</h1>
                             </motion.div>
                         ) :
                             (
                                 <motion.div class="content" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} whileHover={{ scale: 0.95 }}>
-                                    <h1 class="thumb-title">Simple Shooter: Take control of the phantom to survive the enemy onslaught!</h1>
+                                    <h1 class="thumb-title">Chained Reaction: Take control of the phantom to survive the enemy onslaught!</h1>
                                     <div class="image-container">
                                         <img src={simpleShooter} loading="eager" alt="SimpleShooter" />
                                     </div>
